@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Information</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="guitar.png">
+</head>
+<body>
+    <div class="container">
+        <h1><a href="https://www.last.fm/tag/rock/artists" target="_blank">Rock Artist Information</a></h1>
+
+        <div class="button-group">
+            <button onclick="loadCSV()" id="csv-button">Load CSV Data</button>
+            <button onclick="loadJSON()" id="json-button">Load JSON Data</button>
+        </div>
+
+        <table id="artistTable">
+            <thead>
+                <tr>
+                    <th>Artist</th>
+                    <th>Listeners</th>
+                    <th>Years Active</th>
+                    <th>Members</th>
+                    <th>URL</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- will be dynamically insert info -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
